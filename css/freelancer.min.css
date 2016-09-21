@@ -3,6 +3,7 @@
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
+ @import url('font-awesome/css/font-awesome.min.css');
 body.index {
 	background: url(../img/usssa-night-view.jpg) no-repeat;
 	background-size: cover;
@@ -109,7 +110,7 @@ header img {
 .inner-page header .container {
 	padding: 10px 0;
 }
-#table.row {
+#table.row, #players {
 	background: #fff none repeat scroll 0 0;
 	font-family: "Open Sans", sans-serif;
 	font-size: 14px;
@@ -175,6 +176,91 @@ p.greet {
 #main-table .table-row:last-child {
 	margin-bottom: 20px;
 }
+.player-box .player-head .ename {
+	text-align: right
+}
+#players .player-box {
+	background: #f1f1f1 none repeat scroll 0 0;
+	border-radius: 2px;
+	padding: 0 0 10px;
+	margin-top: 23px;
+}
+.player-box .player-head .pname, .player-box .player-head .ename {
+	margin: 0;
+	padding: 0 25px;
+}
+.player-box .player-head {
+	background: #23397a none repeat scroll 0 0;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+	color: #fff;
+	padding-bottom: 0;
+	padding-top: 0;
+}
+#players {
+	padding: 0 20px 20px;
+}
+.future.event .edate {
+	background: #1d2d5f none repeat scroll 0 0;
+	color: #fff;
+}
+.event .edate {
+	text-align: center;
+}
+.event .edate, .event .eteam {
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+#players .event {
+	background: #fff none repeat scroll 0 0;
+	box-shadow: 0 0 50px 0 #cacaca;
+	margin: 30px auto 15px;
+	padding: 0;
+	width: 88%;
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.125);
+	font-weight: 600;
+}
+#players .player-box .event span {
+	display: block;
+}
+.event .eteam {
+	padding-left: 30px;
+}
+.event.today .edate {
+	background: #cf1d25 none repeat scroll 0 0;
+	color: #fff;
+}
+.event .etime {
+	font-size: 18px;
+	font-weight: bold;
+	padding: 0 0 20px;
+}
+.eteam .etime::before {
+	border-bottom: 2px solid #23397a;
+	content: "";
+	position: absolute;
+	top: 40px;
+	width: 50px;
+}
+#players .player-box .event .eteam .teamname, #players .player-box .event .eteam .versus {
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+}
+#players .player-box .event .eteam .teamname {
+	max-width: 190px;
+}
+#players .player-box .event .eteam .versus {
+	vertical-align: middle;
+	padding: 0 20px;
+	color: #999;
+}
+.event .edate .cal-img {
+	padding-top: 5px;
+}
+.event .edate .edate-sec {
+	padding-top: 15px;
+}
 @media only screen and (max-width: 767px) {
 /* Force table to not be like tables anymore */
 #main-table, #main-table .table-heading, #main-table .table-row, #main-table .table-item {
@@ -216,9 +302,26 @@ p.greet {
 	content: "TEAM MANAGER :";
 }
 #main-table .table-row .table-item:last-child {
-    padding-bottom: 15px;
-    padding-left: 0;
-    text-align: center;
+	padding-bottom: 15px;
+	padding-left: 0;
+	text-align: center;
+}
+.player-box .player-head .pname, .player-box .player-head .ename {
+	text-align: center;
+}
+#players .player-box .event .eteam .teamname, #players .player-box .event .eteam .versus {
+	max-width: 100%;
+}
+.event .eteam {
+	text-align: center;
+}
+.eteam .etime::before {
+	left: 0;
+	margin: 0 auto;
+	right: 0;
+}
+.player-box .player-head .pname {
+	border-bottom: 1px solid #1a2b5e;
 }
 }
 @media (min-width:768px) {
