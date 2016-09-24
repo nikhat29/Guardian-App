@@ -103,24 +103,26 @@ header img {
 }
 .intro-text.pending .skills {
 	color: #404040;
-	font-size: 18px;
+	font-size: 24px;
 	font-weight: normal;
 	margin: 0;
 }
 .inner-page header .container {
 	padding: 10px 0;
 }
-#table.row, #players {
+#table.row, #players, #event-details{
 	background: #fff none repeat scroll 0 0;
 	font-family: "Open Sans", sans-serif;
 	font-size: 14px;
 	color: #242a30;
 }
-h4.pending-title {
-	font-size: 16px;
+h2.pending-title {
+	font-size: 18px;
 	font-weight: 600;
 	text-transform: none;
 	color: #fff;
+	margin-bottom: 10px;
+    margin-top: 10px;
 }
 .pend-tab-head {
 	background: #242a30 none repeat scroll 0 0;
@@ -177,89 +179,168 @@ p.greet {
 	margin-bottom: 20px;
 }
 .player-box .player-head .ename {
-	text-align: right
+    text-align: right
 }
-#players .player-box {
-	background: #f1f1f1 none repeat scroll 0 0;
-	border-radius: 2px;
-	padding: 0 0 10px;
-	margin-top: 23px;
+#players .player-box, #event-details .player-box {
+    background: #f1f1f1 none repeat scroll 0 0;
+    border-radius: 2px;
+    padding: 0 0 10px;
+	margin-top:23px;
 }
 .player-box .player-head .pname, .player-box .player-head .ename {
-	margin: 0;
-	padding: 0 25px;
+    margin: 0;
+    padding: 0 25px;
+	font-size: 18px;
 }
 .player-box .player-head {
-	background: #23397a none repeat scroll 0 0;
-	border-top-left-radius: 2px;
-	border-top-right-radius: 2px;
-	color: #fff;
-	padding-bottom: 0;
-	padding-top: 0;
+    background: #000 none repeat scroll 0 0;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    color: #fff;
+    padding-bottom: 0;
+    padding-top: 0;
 }
 #players {
-	padding: 0 20px 20px;
+    padding: 0 20px 20px;
 }
 .future.event .edate {
-	background: #1d2d5f none repeat scroll 0 0;
-	color: #fff;
+    background: #1d2d5f none repeat scroll 0 0;
+    color: #fff;
 }
-.event .edate {
-	text-align: center;
+.event .edate{
+	text-align:center;
 }
 .event .edate, .event .eteam {
-	padding-bottom: 10px;
-	padding-top: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
-#players .event {
-	background: #fff none repeat scroll 0 0;
-	box-shadow: 0 0 50px 0 #cacaca;
-	margin: 30px auto 15px;
-	padding: 0;
-	width: 88%;
-	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.125);
-	font-weight: 600;
+#players .event, #event-details .event {
+    background: #fff none repeat scroll 0 0;
+    box-shadow: 0 0 50px 0 #cacaca;
+    margin: 30px auto 15px;
+    padding: 0;
+    width: 88%;
+	 box-shadow: 0 3px 5px rgba(0, 0, 0, 0.125);
+	 font-weight: 600;
 }
-#players .player-box .event span {
-	display: block;
+#players .player-box .event span, #event-details .event .eteam span, #event-details .event .edate span {
+    display: block;
 }
 .event .eteam {
-	padding-left: 30px;
+    padding-left: 30px;
 }
 .event.today .edate {
-	background: #cf1d25 none repeat scroll 0 0;
-	color: #fff;
+    background: #cf1d25 none repeat scroll 0 0;
+    color: #fff;
 }
-.event .etime {
+.event .etime{
 	font-size: 18px;
-	font-weight: bold;
-	padding: 0 0 20px;
+    font-weight: bold;
+    padding: 0 0 20px;
 }
-.eteam .etime::before {
+.eteam .etime::before{
 	border-bottom: 2px solid #23397a;
-	content: "";
-	position: absolute;
-	top: 40px;
-	width: 50px;
+    content: "";
+    position: absolute;
+    top: 40px;
+    width: 50px;
 }
-#players .player-box .event .eteam .teamname, #players .player-box .event .eteam .versus {
-	display: inline-block;
-	text-align: center;
-	vertical-align: middle;
+.player-head h3 {
+    font-size: 18px;
+    margin-top: 10px;
 }
-#players .player-box .event .eteam .teamname {
-	max-width: 190px;
+#players .player-box .event .eteam .teamname, #players .player-box .event .eteam .versus, #event-details .event .eteam .teamname, #event-details .event .eteam .versus {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}	
+#players .player-box .event .eteam .teamname, #event-details .teamname {
+    max-width: 190px;
 }
-#players .player-box .event .eteam .versus {
-	vertical-align: middle;
+#players .player-box .event .eteam .versus, #event-details .versus {
+    vertical-align: middle;
 	padding: 0 20px;
 	color: #999;
 }
-.event .edate .cal-img {
-	padding-top: 5px;
+.event .edate .cal-img{
+	padding-top:5px;
 }
-.event .edate .edate-sec {
-	padding-top: 15px;
+.event .edate .edate-sec{
+	padding-top:15px;
+}
+.event-head {
+    background: #000 none repeat scroll 0 0;
+    color: #fff;
+}
+.event-subhead {
+    background: #f1f1f1 none repeat scroll 0 0;
+}
+.event-head h1 {
+    font-size: 24px;
+}
+#event-details .event-header {
+    padding: 0;
+}
+.event-head h1, .event-subhead h3 {
+    margin: 10px 0;
+}
+.event-subhead h3{
+	font-size:18px;
+}
+.upcoming-games {
+    padding: 15px 0 18px;
+    text-align: center;
+	position:relative;
+}
+.event-head h2, .event-subhead h5 {
+    text-align: right;
+}
+.event-head h2, .upcoming-games {
+    font-size: 22px;
+    margin: 7px 0;
+}
+.event-subhead h5 {
+    font-size: 14px;
+    margin: 17px 0;
+}
+.upcoming-games::after {
+    border-bottom: 2px solid #000;
+    bottom: 0;
+    content: "";
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    width: 60px;
+}
+.event-subhead h3, .event-subhead h5, .upcoming-games {
+    text-transform: none;
+}
+.playername.player-head {
+    background: #263b7e none repeat scroll 0 0;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+}
+.event-head h2, .event-subhead h3 {
+    line-height: 28px;
+}
+#event-details .edate-sec {
+    padding-bottom: 10px;
+}
+#event-details .edate {
+    padding-bottom: 25px;
+}
+#event-details .event.future .edate {
+    background: green none repeat scroll 0 0;
+}
+#event-details .event.past .edate {
+    background: #595858 none repeat scroll 0 0;
+}
+#event-details {
+    padding-bottom: 20px;
 }
 @media only screen and (max-width: 767px) {
 /* Force table to not be like tables anymore */
@@ -302,26 +383,29 @@ p.greet {
 	content: "TEAM MANAGER :";
 }
 #main-table .table-row .table-item:last-child {
-	padding-bottom: 15px;
-	padding-left: 0;
-	text-align: center;
+    padding-bottom: 15px;
+    padding-left: 0;
+    text-align: center;
 }
 .player-box .player-head .pname, .player-box .player-head .ename {
-	text-align: center;
+    text-align: center;
 }
-#players .player-box .event .eteam .teamname, #players .player-box .event .eteam .versus {
-	max-width: 100%;
+#players .player-box .event .eteam .teamname, #players .player-box .event .eteam .versus, #event-details .player-box .event .eteam .teamname, #event-details .player-box .event .eteam .versus{
+	max-width:100%;
 }
-.event .eteam {
-	text-align: center;
+.event .eteam, .event-head h1, .event-subhead h3, .event-head h2, .event-subhead h5{
+	text-align:center;
 }
-.eteam .etime::before {
+.eteam .etime::before{
 	left: 0;
-	margin: 0 auto;
-	right: 0;
+    margin: 0 auto;
+    right: 0;
 }
-.player-box .player-head .pname {
-	border-bottom: 1px solid #1a2b5e;
+.player-box .player-head .pname, .event-head .event-name {
+    border-bottom: 1px solid #303030;
+}
+.event-subhead .facility-name {
+    border-bottom: 1px solid #dedbdb;
 }
 }
 @media (min-width:768px) {
@@ -333,7 +417,8 @@ header .intro-text .name {
 	font-size: 4.75em
 }
 header .intro-text .skills {
-	font-size: 1.75em
+	font-size: 24px;
+	 text-transform: none;
 }
 }
 .navbar-custom {
@@ -351,7 +436,7 @@ header .intro-text .skills {
 	color: #18BC9C;
 	outline: 0
 }
-.navbar-custom .navbar-nav li a:active, .navbar-custom .navbar-nav li a:focus {
+.navbar-custom .navbar-nav li a:active, .navbar-custom .navbar-nav li a:focus, #event-details .event.past .edate {
 	color: #fff
 }
 .navbar-custom .navbar-nav li.active a, .navbar-custom .navbar-nav li.active a:active, .navbar-custom .navbar-nav li.active a:focus, .navbar-custom .navbar-nav li.active a:hover {
@@ -391,10 +476,6 @@ header .intro-text .skills {
 }
 section {
 	padding: 25px 0 40px;
-}
-section h2 {
-	margin: 0;
-	font-size: 3em;
 }
 section.success {
 	background: #d9e0e7;
